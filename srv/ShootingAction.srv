@@ -1,0 +1,20 @@
+uint8 IDLE = 0
+uint8 GOTO = 1
+uint8 FOLLOW = 2
+uint8 FLYOVER = 3
+uint8 ESTABLISH = 4
+uint8 ELEVATOR = 5
+
+std_msgs/Header header
+uint8 shooting_action_type   # identifies this shooting action
+
+float32 duration  # Expected duration in seconds of the shooting action
+float32 length              # Expected length in meters of the reference target trajectory
+
+uint8 target_type
+geometry_msgs/Vector3 rt_parameter  
+
+---
+
+bool received
+string message

@@ -1,0 +1,6 @@
+<launch>
+
+<node pkg="shot_executer" name="shot_executer_node" type="shot_executer_node" output="screen" ns="drone_1">
+    <remap from="~target_topic" to="/target_fake" />
+</node>
+</launch>
